@@ -1,0 +1,19 @@
+﻿<Window x:Class="FileHash.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileHash"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="0" Name="TextBlockDrop" TextAlignment="Center" Background="#FFE5E6F7" FontSize="18" Margin="10" AllowDrop="True" PreviewDragOver="TextBlockDrop_PreviewDragOver" PreviewDrop="TextBlockDrop_Drop">
+            ここにファイルを Drag&amp;Drop
+        </TextBlock>
+        <TextBlock Grid.Column="1" Name="TextBlockLog" />
+    </Grid>
+</Window>
